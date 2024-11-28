@@ -1,0 +1,30 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+$('#b1').click(function(){
+$("img").fadeOut(1000);
+});
+$('#b2').click(function(){
+$("img").fadeIn("slow");
+});
+$('#b3').click(function(){
+$("img").fadeToggle("fast");
+});
+$('#b4').click(function(){
+$("img").fadeTo("slow",0.3);
+});
+
+});
+</script>
+</head>
+<body>
+<img src="pic.jpg"><br>
+<button id="b1">fadeOut</button>
+<button id="b2">fadeIn</button>
+<button id="b3">FadeToggle</button>
+<button id="b4">FadeTo</button>
+</body>
+</html>
